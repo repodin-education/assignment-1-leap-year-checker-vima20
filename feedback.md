@@ -16,43 +16,38 @@ The submission correctly implements the leap year algorithm with proper conditio
 - Correct implementation of leap year algorithm with proper conditional ordering in main.py lines 6-13.
 - Use of .strip() on input in main.py line 5 to handle leading/trailing whitespace.
 - Simple and straightforward code structure that is easy to follow for basic functionality.
-- Insufficient documentation and comments.
-- Code style could be improved for better readability.
+- No function structure or modularization — the code is a single script without reusable components.
 
 ---
 
 ## Improvement Areas
 
-- Lack of input validation and error handling — the program crashes on non-integer inputs or invalid values. — Add try-except blocks around int(input().strip()) to catch ValueError and provide a user-friendly error message, e.g., 'Please enter a valid integer year.' Also, validate that the year is a positive integer.
-- Missing edge case handling for invalid year values. — Include checks for edge cases like zero or negative numbers with appropriate error messages, e.g., 'Year must be a positive integer.'
-- Insufficient documentation and comments. — Add inline comments to explain the leap year logic (e.g., why the order of conditions matters) and consider adding a docstring or function to improve modularity.
-- Code style could be improved for better readability. — Follow PEP 8 guidelines by adding spaces around operators (e.g., year % 400 == 0) and consider breaking the code into a function for reusability.
+- Lack of input validation and error handling — the program crashes on non-integer inputs or invalid values. — Add try-except blocks around int(input().strip()) to catch ValueError and provide a user-friendly error message, e.g., 'Please enter a valid integer year.' Also, validate that the input is a positive integer (e.g., year > 0).
+- Missing documentation and comments — the code lacks inline comments explaining the leap year logic. — Add comments in main.py to explain the conditional checks (e.g., '# Check divisible by 400', '# Check divisible by 100', etc.) and consider adding a docstring if using a function structure.
+- No function structure or modularization — the code is a single script without reusable components. — Refactor the leap year logic into a function (e.g., is_leap_year(year)) to improve code organization and testability.
 - Lack of input validation and error handling — the program crashes on non-integer inputs or invalid values.
-- Missing edge case handling for invalid year values.
-- Insufficient documentation and comments.
-- Code style could be improved for better readability.
+- Missing documentation and comments — the code lacks inline comments explaining the leap year logic.
+- No function structure or modularization — the code is a single script without reusable components.
 
 ---
 
 ## Immediate Next Steps
 
-- Lack of input validation and error handling — the program crashes on non-integer inputs or invalid values.: Add try-except blocks around int(input().strip()) to catch ValueError and provide a user-friendly error message, e.g., 'Please enter a valid integer year.' Also, validate that the year is a positive integer.
-- Missing edge case handling for invalid year values.: Include checks for edge cases like zero or negative numbers with appropriate error messages, e.g., 'Year must be a positive integer.'
-- Insufficient documentation and comments.: Add inline comments to explain the leap year logic (e.g., why the order of conditions matters) and consider adding a docstring or function to improve modularity.
-- Code style could be improved for better readability.: Follow PEP 8 guidelines by adding spaces around operators (e.g., year % 400 == 0) and consider breaking the code into a function for reusability.
+- Lack of input validation and error handling — the program crashes on non-integer inputs or invalid values.: Add try-except blocks around int(input().strip()) to catch ValueError and provide a user-friendly error message, e.g., 'Please enter a valid integer year.' Also, validate that the input is a positive integer (e.g., year > 0).
+- Missing documentation and comments — the code lacks inline comments explaining the leap year logic.: Add comments in main.py to explain the conditional checks (e.g., '# Check divisible by 400', '# Check divisible by 100', etc.) and consider adding a docstring if using a function structure.
+- No function structure or modularization — the code is a single script without reusable components.: Refactor the leap year logic into a function (e.g., is_leap_year(year)) to improve code organization and testability.
 
 ---
 
 ## Longer-Term Focus
 
-- Add try-except blocks around int(input().strip()) to catch ValueError and provide a user-friendly error message, e.g., 'Please enter a valid integer year.' Also, validate that the year is a positive integer.
-- Include checks for edge cases like zero or negative numbers with appropriate error messages, e.g., 'Year must be a positive integer.'
-- Add inline comments to explain the leap year logic (e.g., why the order of conditions matters) and consider adding a docstring or function to improve modularity.
-- Follow PEP 8 guidelines by adding spaces around operators (e.g., year % 400 == 0) and consider breaking the code into a function for reusability.
+- Add try-except blocks around int(input().strip()) to catch ValueError and provide a user-friendly error message, e.g., 'Please enter a valid integer year.' Also, validate that the input is a positive integer (e.g., year > 0).
+- Add comments in main.py to explain the conditional checks (e.g., '# Check divisible by 400', '# Check divisible by 100', etc.) and consider adding a docstring if using a function structure.
+- Refactor the leap year logic into a function (e.g., is_leap_year(year)) to improve code organization and testability.
 
 ---
 
 *Generated by RepodIn AI*
 **Student:** vima20 · **Repository:** `assignment-1-leap-year-checker-vima20`
 **Course:** Python · **Assignment:** assignment-1-leap-year-checker-vima20
-**Model:** RepodIn AI · **Generated:** Mar 26, 2026, 6:06 PM
+**Model:** RepodIn AI · **Generated:** Mar 26, 2026, 6:07 PM
