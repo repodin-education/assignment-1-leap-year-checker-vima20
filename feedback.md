@@ -7,13 +7,13 @@
 
 ## Summary
 
-The submission correctly implements the leap year algorithm and meets basic requirements, but lacks input validation, error handling, and documentation, which are key focus areas for this assignment.
+The submission correctly implements the leap year algorithm with proper conditional logic and produces the expected output for valid integer inputs. However, it lacks input validation, error handling, and documentation, which are key focus areas for this assignment.
 
 ---
 
 ## Strengths
 
-- Correct implementation of leap year logic with proper conditional ordering (e.g., checking divisibility by 400 before 100 to handle centuries correctly).
+- Correct implementation of leap year logic with proper conditional ordering (checking divisibility by 400 before 100).
 - Simple and straightforward code structure that is easy to follow for basic functionality.
 - Use of .strip() on input to handle leading/trailing whitespace, showing attention to detail in input processing.
 - Insufficient documentation and comments
@@ -24,7 +24,7 @@ The submission correctly implements the leap year algorithm and meets basic requ
 
 - Lack of input validation and error handling — Add try-except blocks around int(input().strip()) to catch ValueError for non-integer inputs and provide a user-friendly error message, e.g., 'Please enter a valid integer year.'
 - Missing edge case handling for invalid year values — Include validation to check if the year is a positive integer (e.g., year > 0) and handle cases like zero or negative years with appropriate error messages.
-- Insufficient documentation and comments — Add inline comments to explain the leap year logic (e.g., # Check divisibility rules) and consider wrapping the logic in a function with a docstring for better modularity and reusability.
+- Insufficient documentation and comments — Add inline comments to explain the leap year logic steps and improve code readability. Consider adding a docstring or more detailed header comments.
 - Lack of input validation and error handling
 - Missing edge case handling for invalid year values
 - Insufficient documentation and comments
@@ -35,7 +35,7 @@ The submission correctly implements the leap year algorithm and meets basic requ
 
 - Lack of input validation and error handling: Add try-except blocks around int(input().strip()) to catch ValueError for non-integer inputs and provide a user-friendly error message, e.g., 'Please enter a valid integer year.'
 - Missing edge case handling for invalid year values: Include validation to check if the year is a positive integer (e.g., year > 0) and handle cases like zero or negative years with appropriate error messages.
-- Insufficient documentation and comments: Add inline comments to explain the leap year logic (e.g., # Check divisibility rules) and consider wrapping the logic in a function with a docstring for better modularity and reusability.
+- Insufficient documentation and comments: Add inline comments to explain the leap year logic steps and improve code readability. Consider adding a docstring or more detailed header comments.
 
 ---
 
@@ -43,7 +43,7 @@ The submission correctly implements the leap year algorithm and meets basic requ
 
 - Add try-except blocks around int(input().strip()) to catch ValueError for non-integer inputs and provide a user-friendly error message, e.g., 'Please enter a valid integer year.'
 - Include validation to check if the year is a positive integer (e.g., year > 0) and handle cases like zero or negative years with appropriate error messages.
-- Add inline comments to explain the leap year logic (e.g., # Check divisibility rules) and consider wrapping the logic in a function with a docstring for better modularity and reusability.
+- Add inline comments to explain the leap year logic steps and improve code readability. Consider adding a docstring or more detailed header comments.
 
 ---
 
