@@ -13,46 +13,46 @@ The submission correctly implements the leap year algorithm with proper conditio
 
 ## Strengths
 
-- Correct implementation of leap year algorithm with proper conditional ordering (checking divisibility by 400 before 100).
+- Correct implementation of leap year logic with proper conditional ordering (checking divisibility by 400 before 100).
 - Simple and straightforward code structure that is easy to follow for basic functionality.
 - Use of .strip() on input to handle leading/trailing whitespace, showing attention to detail in input processing.
 - Insufficient documentation and comments — code lacks explanatory comments beyond the header.
-- Code style could be improved for better readability and PEP 8 compliance.
+- No clean function structure or modularization — the code is written directly in the global scope.
 
 ---
 
 ## Improvement Areas
 
 - Lack of input validation and error handling — the program crashes on non-integer inputs or invalid values. — Add try-except blocks around int(input().strip()) to catch ValueError and provide a user-friendly error message, e.g., 'Please enter a valid integer year.'
-- Missing edge case handling for invalid year values — no validation for positive integers. — Include validation to ensure the year is a positive integer (e.g., year > 0) and handle cases like zero or negative years with appropriate error messages.
-- Insufficient documentation and comments — code lacks explanatory comments beyond the header. — Add inline comments to explain the leap year logic steps and consider wrapping the logic in a function with a docstring for better modularity and reusability.
-- Code style could be improved for better readability and PEP 8 compliance. — Add spaces around operators in conditions (e.g., 'year % 400 == 0') and ensure consistent indentation to enhance code clarity.
+- Missing edge case handling for invalid year values — no validation for positive integers or other constraints. — Include checks to ensure the year is a positive integer (e.g., if year <= 0: print('Invalid year')).
+- Insufficient documentation and comments — code lacks explanatory comments beyond the header. — Add inline comments to explain the leap year logic and any assumptions, e.g., '# Check divisibility by 400 first' before the if statement.
+- No clean function structure or modularization — the code is written directly in the global scope. — Refactor the logic into a function like is_leap_year(year) that returns a boolean, making the code more reusable and testable.
 - Lack of input validation and error handling — the program crashes on non-integer inputs or invalid values.
-- Missing edge case handling for invalid year values — no validation for positive integers.
+- Missing edge case handling for invalid year values — no validation for positive integers or other constraints.
 - Insufficient documentation and comments — code lacks explanatory comments beyond the header.
-- Code style could be improved for better readability and PEP 8 compliance.
+- No clean function structure or modularization — the code is written directly in the global scope.
 
 ---
 
 ## Immediate Next Steps
 
 - Lack of input validation and error handling — the program crashes on non-integer inputs or invalid values.: Add try-except blocks around int(input().strip()) to catch ValueError and provide a user-friendly error message, e.g., 'Please enter a valid integer year.'
-- Missing edge case handling for invalid year values — no validation for positive integers.: Include validation to ensure the year is a positive integer (e.g., year > 0) and handle cases like zero or negative years with appropriate error messages.
-- Insufficient documentation and comments — code lacks explanatory comments beyond the header.: Add inline comments to explain the leap year logic steps and consider wrapping the logic in a function with a docstring for better modularity and reusability.
-- Code style could be improved for better readability and PEP 8 compliance.: Add spaces around operators in conditions (e.g., 'year % 400 == 0') and ensure consistent indentation to enhance code clarity.
+- Missing edge case handling for invalid year values — no validation for positive integers or other constraints.: Include checks to ensure the year is a positive integer (e.g., if year <= 0: print('Invalid year')).
+- Insufficient documentation and comments — code lacks explanatory comments beyond the header.: Add inline comments to explain the leap year logic and any assumptions, e.g., '# Check divisibility by 400 first' before the if statement.
+- No clean function structure or modularization — the code is written directly in the global scope.: Refactor the logic into a function like is_leap_year(year) that returns a boolean, making the code more reusable and testable.
 
 ---
 
 ## Longer-Term Focus
 
 - Add try-except blocks around int(input().strip()) to catch ValueError and provide a user-friendly error message, e.g., 'Please enter a valid integer year.'
-- Include validation to ensure the year is a positive integer (e.g., year > 0) and handle cases like zero or negative years with appropriate error messages.
-- Add inline comments to explain the leap year logic steps and consider wrapping the logic in a function with a docstring for better modularity and reusability.
-- Add spaces around operators in conditions (e.g., 'year % 400 == 0') and ensure consistent indentation to enhance code clarity.
+- Include checks to ensure the year is a positive integer (e.g., if year <= 0: print('Invalid year')).
+- Add inline comments to explain the leap year logic and any assumptions, e.g., '# Check divisibility by 400 first' before the if statement.
+- Refactor the logic into a function like is_leap_year(year) that returns a boolean, making the code more reusable and testable.
 
 ---
 
 *Generated by RepodIn AI*
 **Student:** vima20 · **Repository:** `assignment-1-leap-year-checker-vima20`
 **Course:** Python · **Assignment:** assignment-1-leap-year-checker-vima20
-**Model:** RepodIn AI · **Generated:** Mar 26, 2026, 5:41 PM
+**Model:** RepodIn AI · **Generated:** Mar 26, 2026, 5:42 PM
