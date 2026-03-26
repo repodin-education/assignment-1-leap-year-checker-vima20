@@ -7,47 +7,47 @@
 
 ## Summary
 
-Good submission with correct leap year logic and clean code structure, but lacking input validation, error handling, and documentation as required by the assignment focus areas.
+The submission correctly implements the leap year algorithm with proper conditional logic and produces expected output for valid integer inputs. However, it lacks input validation, error handling, and documentation, which are key focus areas for this assignment.
 
 ---
 
 ## Strengths
 
-- Correct implementation of leap year algorithm with proper conditional ordering in main.py lines 6-13.
-- Clean and straightforward code structure that is easy to read for basic functionality.
-- Use of .strip() on input in main.py line 5 to handle leading/trailing whitespace, showing attention to input processing details.
-- Insufficient documentation and comments - code lacks explanatory comments beyond the header.
+- Correct implementation of leap year logic with proper conditional ordering in main.py lines 6-13.
+- Use of .strip() on input in main.py line 5 to handle leading/trailing whitespace.
+- Simple and straightforward code structure that is easy to follow for basic functionality.
+- Insufficient documentation and comments — code lacks explanatory comments beyond the header.
 
 ---
 
 ## Improvement Areas
 
-- Lack of input validation and error handling - program crashes on non-integer inputs. — Add try-except blocks around int(input().strip()) to catch ValueError and provide a user-friendly error message, e.g., 'Please enter a valid integer year.'
-- Missing edge case handling for invalid year values like negative numbers or zero. — Include validation to check if year > 0 or handle historical edge cases with clear messages, e.g., 'Year must be a positive integer.'
-- Insufficient documentation and comments - code lacks explanatory comments beyond the header. — Add inline comments to explain the leap year logic (e.g., # Check divisible by 400 first) and consider wrapping code in a function with a docstring for reusability.
-- Lack of input validation and error handling - program crashes on non-integer inputs.
-- Missing edge case handling for invalid year values like negative numbers or zero.
-- Insufficient documentation and comments - code lacks explanatory comments beyond the header.
+- Lack of input validation and error handling — the program crashes on non-integer inputs or invalid values. — Add try-except blocks around int(input().strip()) to catch ValueError and provide a user-friendly error message, e.g., 'Please enter a valid integer year.'
+- Missing edge case handling for invalid year values. — Validate that the input is a positive integer (e.g., year > 0) and handle cases like zero or negative numbers with appropriate error messages.
+- Insufficient documentation and comments — code lacks explanatory comments beyond the header. — Add inline comments to explain the leap year logic (e.g., why check 400 before 100) and consider using a function to improve modularity.
+- Lack of input validation and error handling — the program crashes on non-integer inputs or invalid values.
+- Missing edge case handling for invalid year values.
+- Insufficient documentation and comments — code lacks explanatory comments beyond the header.
 
 ---
 
 ## Immediate Next Steps
 
-- Lack of input validation and error handling - program crashes on non-integer inputs.: Add try-except blocks around int(input().strip()) to catch ValueError and provide a user-friendly error message, e.g., 'Please enter a valid integer year.'
-- Missing edge case handling for invalid year values like negative numbers or zero.: Include validation to check if year > 0 or handle historical edge cases with clear messages, e.g., 'Year must be a positive integer.'
-- Insufficient documentation and comments - code lacks explanatory comments beyond the header.: Add inline comments to explain the leap year logic (e.g., # Check divisible by 400 first) and consider wrapping code in a function with a docstring for reusability.
+- Lack of input validation and error handling — the program crashes on non-integer inputs or invalid values.: Add try-except blocks around int(input().strip()) to catch ValueError and provide a user-friendly error message, e.g., 'Please enter a valid integer year.'
+- Missing edge case handling for invalid year values.: Validate that the input is a positive integer (e.g., year > 0) and handle cases like zero or negative numbers with appropriate error messages.
+- Insufficient documentation and comments — code lacks explanatory comments beyond the header.: Add inline comments to explain the leap year logic (e.g., why check 400 before 100) and consider using a function to improve modularity.
 
 ---
 
 ## Longer-Term Focus
 
 - Add try-except blocks around int(input().strip()) to catch ValueError and provide a user-friendly error message, e.g., 'Please enter a valid integer year.'
-- Include validation to check if year > 0 or handle historical edge cases with clear messages, e.g., 'Year must be a positive integer.'
-- Add inline comments to explain the leap year logic (e.g., # Check divisible by 400 first) and consider wrapping code in a function with a docstring for reusability.
+- Validate that the input is a positive integer (e.g., year > 0) and handle cases like zero or negative numbers with appropriate error messages.
+- Add inline comments to explain the leap year logic (e.g., why check 400 before 100) and consider using a function to improve modularity.
 
 ---
 
 *Generated by RepodIn AI*
 **Student:** vima20 · **Repository:** `assignment-1-leap-year-checker-vima20`
 **Course:** Python · **Assignment:** assignment-1-leap-year-checker-vima20
-**Model:** RepodIn AI · **Generated:** Mar 26, 2026, 5:50 PM
+**Model:** RepodIn AI · **Generated:** Mar 26, 2026, 5:51 PM
