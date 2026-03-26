@@ -17,7 +17,6 @@ The submission correctly implements the leap year algorithm with proper conditio
 - Simple and straightforward code structure that is easy to follow for basic functionality.
 - Use of .strip() on input to handle leading/trailing whitespace, showing attention to detail in input processing.
 - Insufficient documentation and comments
-- Code formatting could be improved for PEP 8 compliance
 
 ---
 
@@ -25,12 +24,10 @@ The submission correctly implements the leap year algorithm with proper conditio
 
 - Lack of input validation and error handling — Add try-except blocks around int(input().strip()) to catch ValueError for non-integer inputs and provide a user-friendly error message, e.g., 'Please enter a valid integer year.'
 - Missing edge case handling for invalid year values — Include validation to check if the year is a positive integer (e.g., year > 0) and handle cases like zero or negative years with appropriate error messages.
-- Insufficient documentation and comments — Add inline comments to explain the leap year logic (e.g., '# Check divisibility by 400, 100, 4') and consider adding a docstring or more detailed header to describe the program's purpose.
-- Code formatting could be improved for PEP 8 compliance — Add spaces around operators in conditions (e.g., 'year % 400 == 0' instead of 'year % 400 == 0') and ensure consistent indentation to enhance readability.
+- Insufficient documentation and comments — Add inline comments to explain the leap year logic and consider wrapping the code in a function (e.g., is_leap_year(year)) for better structure and reusability.
 - Lack of input validation and error handling
 - Missing edge case handling for invalid year values
 - Insufficient documentation and comments
-- Code formatting could be improved for PEP 8 compliance
 
 ---
 
@@ -38,8 +35,7 @@ The submission correctly implements the leap year algorithm with proper conditio
 
 - Lack of input validation and error handling: Add try-except blocks around int(input().strip()) to catch ValueError for non-integer inputs and provide a user-friendly error message, e.g., 'Please enter a valid integer year.'
 - Missing edge case handling for invalid year values: Include validation to check if the year is a positive integer (e.g., year > 0) and handle cases like zero or negative years with appropriate error messages.
-- Insufficient documentation and comments: Add inline comments to explain the leap year logic (e.g., '# Check divisibility by 400, 100, 4') and consider adding a docstring or more detailed header to describe the program's purpose.
-- Code formatting could be improved for PEP 8 compliance: Add spaces around operators in conditions (e.g., 'year % 400 == 0' instead of 'year % 400 == 0') and ensure consistent indentation to enhance readability.
+- Insufficient documentation and comments: Add inline comments to explain the leap year logic and consider wrapping the code in a function (e.g., is_leap_year(year)) for better structure and reusability.
 
 ---
 
@@ -47,8 +43,7 @@ The submission correctly implements the leap year algorithm with proper conditio
 
 - Add try-except blocks around int(input().strip()) to catch ValueError for non-integer inputs and provide a user-friendly error message, e.g., 'Please enter a valid integer year.'
 - Include validation to check if the year is a positive integer (e.g., year > 0) and handle cases like zero or negative years with appropriate error messages.
-- Add inline comments to explain the leap year logic (e.g., '# Check divisibility by 400, 100, 4') and consider adding a docstring or more detailed header to describe the program's purpose.
-- Add spaces around operators in conditions (e.g., 'year % 400 == 0' instead of 'year % 400 == 0') and ensure consistent indentation to enhance readability.
+- Add inline comments to explain the leap year logic and consider wrapping the code in a function (e.g., is_leap_year(year)) for better structure and reusability.
 
 ---
 
